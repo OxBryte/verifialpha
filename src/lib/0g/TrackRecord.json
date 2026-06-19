@@ -1,0 +1,98 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "agent",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "storageRoot",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "int8",
+          "name": "action",
+          "type": "int8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint64",
+          "name": "ts",
+          "type": "uint64"
+        }
+      ],
+      "name": "Decision",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "count",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "storageRoot",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "int8",
+          "name": "action",
+          "type": "int8"
+        }
+      ],
+      "name": "logDecision",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "roots",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561000f575f80fd5b506101b08061001d5f395ff3fe608060405234801561000f575f80fd5b506004361061003f575f3560e01c806306661abd146100435780630ca749a21461005d578063c2b40ae414610070575b5f80fd5b61004b5f5481565b60405190815260200160405180910390f35b61004b61006b36600461010d565b61008f565b61004b61007e36600461013f565b60016020525f908152604090205481565b5f8054818061009d83610156565b909155505f81815260016020908152604080832087905580518781529286900b9183019190915267ffffffffffffffff421690820152909150339082907f153e82c61d6241b964e5daeda4f15b07c9ce0c616ce0ab7ade39f384eb122dcb9060600160405180910390a392915050565b5f806040838503121561011e575f80fd5b823591506020830135805f0b8114610134575f80fd5b809150509250929050565b5f6020828403121561014f575f80fd5b5035919050565b5f6001820161017357634e487b7160e01b5f52601160045260245ffd5b506001019056fea2646970667358221220a9de1ae1e9ceba51f5a1d66ec59f94b6730edb23b234e83be10e2f35b62f4d1b64736f6c63430008180033"
+}
